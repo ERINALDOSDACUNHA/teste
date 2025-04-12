@@ -1,0 +1,64 @@
+import { Card, CardContent } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+import { Sparkles, Eye, Sun, Star, Quote, Diamond, Crown, Medal, Gem } from "lucide-react";
+import { motion } from "framer-motion";
+
+export default function LumniaLandingPage() {
+  return (
+    <div className="min-h-screen bg-gradient-to-br from-white to-blue-50 text-gray-800 p-6 scroll-smooth">
+      <header className="max-w-5xl mx-auto py-10 text-center">
+        <motion.h1 
+          className="text-5xl font-bold text-blue-900 mb-4"
+          initial={{ opacity: 0, y: -20 }} 
+          animate={{ opacity: 1, y: 0 }} 
+          transition={{ duration: 0.6 }}
+        >
+          Lumnia Lentes
+        </motion.h1>
+        <p className="text-lg text-gray-600">
+          Clareza que inspira. Conforto que transforma. Bem-vindo à nova era da visão.
+        </p>
+      </header>
+
+      <main id="modelos" className="max-w-6xl mx-auto">
+        <h2 className="text-3xl font-bold text-blue-900 text-center mb-10">Modelos Multifocais</h2>
+        <div className="grid md:grid-cols-4 gap-6">
+          {/* Cards de modelo aqui */}
+        </div>
+      </main>
+
+      <section className="max-w-3xl mx-auto text-center mt-16">
+        <motion.h2 
+          className="text-3xl font-bold text-blue-800 mb-4"
+          initial={{ opacity: 0 }} 
+          whileInView={{ opacity: 1 }} 
+          transition={{ duration: 0.6 }}
+        >
+          Sinta a Diferença Lumnia
+        </motion.h2>
+        <p className="text-gray-600 mb-6">
+          As lentes Lumnia são desenvolvidas com tecnologia avançada e pensadas para o conforto e o estilo dos brasileiros. Descubra um novo padrão de qualidade visual.
+        </p>
+        <a href="#modelos">
+          <Button className="bg-blue-700 hover:bg-blue-800 text-white px-6 py-2 rounded-2xl">
+            Conheça nossos modelos
+          </Button>
+        </a>
+      </section>
+
+      <section className="max-w-6xl mx-auto mt-20">
+        <h2 className="text-3xl font-bold text-center text-blue-900 mb-10">Depoimentos</h2>
+        {/* Cards de depoimentos */}
+      </section>
+
+      <section className="max-w-6xl mx-auto mt-20 text-center">
+        <h2 className="text-3xl font-bold text-blue-900 mb-4">Perguntas Frequentes</h2>
+        {/* Perguntas frequentes aqui */}
+      </section>
+
+      <footer className="mt-20 text-center text-gray-400 text-sm">
+        © 2025 Lumnia Lentes. Todos os direitos reservados.
+      </footer>
+    </div>
+  );
+}
