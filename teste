@@ -23,7 +23,65 @@ export default function LumniaLandingPage() {
       <main id="modelos" className="max-w-6xl mx-auto">
         <h2 className="text-3xl font-bold text-blue-900 text-center mb-10">Modelos Multifocais</h2>
         <div className="grid md:grid-cols-4 gap-6">
-          {/* Cards de modelo aqui */}
+          <Card className="rounded-2xl shadow-xl">
+            <CardContent className="p-6 text-center">
+              <Medal className="w-10 h-10 mx-auto text-gray-500 mb-4" />
+              <h3 className="text-xl font-semibold">Lumnia Silver</h3>
+              <p className="text-gray-500 mt-2">
+                Qualidade acessível com tecnologia multifocal de entrada e excelente desempenho visual.
+              </p>
+              <ul className="text-gray-500 mt-4 text-left">
+                <li>Ótima relação custo-benefício</li>
+                <li>Conforto visual para uso diário</li>
+                <li>Adaptação rápida</li>
+              </ul>
+            </CardContent>
+          </Card>
+
+          <Card className="rounded-2xl shadow-xl">
+            <CardContent className="p-6 text-center">
+              <Star className="w-10 h-10 mx-auto text-yellow-500 mb-4" />
+              <h3 className="text-xl font-semibold">Lumnia Gold</h3>
+              <p className="text-gray-500 mt-2">
+                Equilíbrio entre conforto e nitidez. Ideal para quem busca um multifocal com ótimo custo-benefício.
+              </p>
+              <ul className="text-gray-500 mt-4 text-left">
+                <li>Visão nítida em todas as distâncias</li>
+                <li>Redução de distorções periféricas</li>
+                <li>Maior conforto durante longos períodos de uso</li>
+              </ul>
+            </CardContent>
+          </Card>
+
+          <Card className="rounded-2xl shadow-xl">
+            <CardContent className="p-6 text-center">
+              <Crown className="w-10 h-10 mx-auto text-blue-700 mb-4" />
+              <h3 className="text-xl font-semibold">Lumnia Platinum</h3>
+              <p className="text-gray-500 mt-2">
+                Alta performance para usuários exigentes. Campo de visão ampliado e maior adaptação.
+              </p>
+              <ul className="text-gray-500 mt-4 text-left">
+                <li>Adaptação excepcional e rápida</li>
+                <li>Maior amplitude de campo visual</li>
+                <li>Visão clara em todas as situações</li>
+              </ul>
+            </CardContent>
+          </Card>
+
+          <Card className="rounded-2xl shadow-xl">
+            <CardContent className="p-6 text-center">
+              <Gem className="w-10 h-10 mx-auto text-purple-600 mb-4" />
+              <h3 className="text-xl font-semibold">Lumnia Signature Premium</h3>
+              <p className="text-gray-500 mt-2">
+                O que há de mais moderno em multifocais. Personalização total e conforto visual incomparável.
+              </p>
+              <ul className="text-gray-500 mt-4 text-left">
+                <li>Design personalizado para cada usuário</li>
+                <li>Conforto visual incomparável durante o dia inteiro</li>
+                <li>Proteção avançada contra luz azul e raios UV</li>
+              </ul>
+            </CardContent>
+          </Card>
         </div>
       </main>
 
@@ -48,12 +106,53 @@ export default function LumniaLandingPage() {
 
       <section className="max-w-6xl mx-auto mt-20">
         <h2 className="text-3xl font-bold text-center text-blue-900 mb-10">Depoimentos</h2>
-        {/* Cards de depoimentos */}
+        <div className="grid md:grid-cols-3 gap-6">
+          <Card className="rounded-2xl shadow-md">
+            <CardContent className="p-6">
+              <Quote className="w-6 h-6 text-blue-500 mb-2" />
+              <p className="text-gray-600 italic">“As lentes Lumnia mudaram completamente a minha experiência visual. Confortáveis e estilosas.”</p>
+              <p className="text-sm text-gray-500 mt-4">— Ana Paula, São Paulo</p>
+            </CardContent>
+          </Card>
+
+          <Card className="rounded-2xl shadow-md">
+            <CardContent className="p-6">
+              <Quote className="w-6 h-6 text-blue-500 mb-2" />
+              <p className="text-gray-600 italic">“Nunca mais senti fadiga visual. A nitidez é impressionante!”</p>
+              <p className="text-sm text-gray-500 mt-4">— Ricardo M., Belo Horizonte</p>
+            </CardContent>
+          </Card>
+
+          <Card className="rounded-2xl shadow-md">
+            <CardContent className="p-6">
+              <Quote className="w-6 h-6 text-blue-500 mb-2" />
+              <p className="text-gray-600 italic">“Proteção e beleza em uma lente só. Recomendo demais!”</p>
+              <p className="text-sm text-gray-500 mt-4">— Júlia N., Porto Alegre</p>
+            </CardContent>
+          </Card>
+        </div>
       </section>
 
       <section className="max-w-6xl mx-auto mt-20 text-center">
         <h2 className="text-3xl font-bold text-blue-900 mb-4">Perguntas Frequentes</h2>
-        {/* Perguntas frequentes aqui */}
+        <div className="mt-6 text-left grid gap-6 md:grid-cols-2">
+          <div>
+            <h3 className="font-semibold text-blue-800">As lentes Lumnia possuem antirreflexo?</h3>
+            <p className="text-gray-600">Sim! Todas as nossas lentes vêm com tratamento antirreflexo de alta performance.</p>
+          </div>
+          <div>
+            <h3 className="font-semibold text-blue-800">É possível usar Lumnia em armações solares?</h3>
+            <p className="text-gray-600">Sim. Temos lentes Lumnia desenvolvidas especialmente para óculos solares, com proteção total contra raios UV.</p>
+          </div>
+          <div>
+            <h3 className="font-semibold text-blue-800">As lentes são produzidas no Brasil?</h3>
+            <p className="text-gray-600">Sim! Lumnia é uma marca brasileira com produção nacional, garantindo qualidade e agilidade.</p>
+          </div>
+          <div>
+            <h3 className="font-semibold text-blue-800">Qual é a garantia das lentes?</h3>
+            <p className="text-gray-600">Oferecemos 1 ano de garantia contra defeitos de fabricação e tratamentos aplicados.</p>
+          </div>
+        </div>
       </section>
 
       <footer className="mt-20 text-center text-gray-400 text-sm">
@@ -62,3 +161,4 @@ export default function LumniaLandingPage() {
     </div>
   );
 }
+
